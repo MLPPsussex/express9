@@ -10,7 +10,13 @@ app.get('/api/data', (req, res) => {
     count++
     const data = { message: 'Hello!'+count };
 
-    setTimeout( ()=>res.json(data), 100*count);
+    res.json(data);
+});
+app.post('/api/data', (req, res) => {
+    // Simulated data from the backend server
+    var strg=JSON.stringify(req)
+    const data = { mess: strg };
+    res.json(data);
 });
 
 // Start the server
