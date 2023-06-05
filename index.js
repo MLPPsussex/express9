@@ -14,8 +14,8 @@ app.get('/api/data', (req, res) => {
 });
 app.post('/api/data', (req, res) => {
     // Simulated data from the backend server
-    var strg=JSON.stringify(req)
-    const data = { mess: strg };
+   // var strg=JSON.stringify(req)
+    const data = { mess: 'hi' };
     res.json(data);
 });
 
